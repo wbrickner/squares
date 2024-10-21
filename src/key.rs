@@ -165,6 +165,8 @@ pub const fn key(index: u64) -> Key {
   Key(output)
 }
 
+/// Represents a broken key rule
+/// 
 /// ### Properties of Admissible Keys:
 /// 
 /// 1. All nibbles in the key are non-zero (0x1 to 0xF).
