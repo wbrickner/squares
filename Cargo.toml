@@ -1,6 +1,6 @@
 [package]
 name = "squares"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Will Brickner"]
 description = "A Counter-RNG faster than Philox"
@@ -8,9 +8,10 @@ readme = "README.md"
 license = "MIT OR Apache-2.0"
 keywords = ["rng", "squares", "cbrng", "philox", "no_std"]
 categories = ["no-std", "no-std::no-alloc", "embedded", "algorithms"]
+documentation = "https://docs.rs/crate/squares/"
 
 [features]
-default = ["rand"]
+default = []
 rand = ["rand_core"]
 
 [dependencies]
