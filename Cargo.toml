@@ -1,0 +1,24 @@
+[package]
+name = "squares"
+version = "0.1.0"
+edition = "2021"
+authors = ["Will Brickner"]
+description = "A Counter-RNG faster than Philox"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["rng", "squares", "cbrng", "philox", "no_std"]
+categories = ["no-std", "no-std::no-alloc", "embedded", "algorithms"]
+
+[features]
+default = ["rand"]
+rand = ["rand_core"]
+
+[dependencies]
+rand_core = { version = "0.6.4", optional = true }
+
+[dev-dependencies]
+criterion = { version = "0.5", features = ["html_reports"] }
+
+[[bench]]
+name = "throughput"
+harness = false
